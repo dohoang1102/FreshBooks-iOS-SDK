@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D626A5F515B38F8900C456E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A5F415B38F8900C456E8 /* UIKit.framework */; };
+		D626A5F715B38F8900C456E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A5F615B38F8900C456E8 /* Foundation.framework */; };
+		D626A5F915B38F8900C456E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A5F815B38F8900C456E8 /* CoreGraphics.framework */; };
+		D626A5FF15B38F8900C456E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D626A5FD15B38F8900C456E8 /* InfoPlist.strings */; };
+		D626A60115B38F8900C456E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A60015B38F8900C456E8 /* main.m */; };
+		D626A60515B38F8900C456E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A60415B38F8900C456E8 /* AppDelegate.m */; };
+		D626A60D15B38F8900C456E8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A60C15B38F8900C456E8 /* SenTestingKit.framework */; };
+		D626A60E15B38F8900C456E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A5F415B38F8900C456E8 /* UIKit.framework */; };
+		D626A60F15B38F8900C456E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A5F615B38F8900C456E8 /* Foundation.framework */; };
+		D626A61715B38F8900C456E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D626A61515B38F8900C456E8 /* InfoPlist.strings */; };
+		D626A61A15B38F8900C456E8 /* FreshestBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A61915B38F8900C456E8 /* FreshestBooksTests.m */; };
+		D626A62515B38FD700C456E8 /* FreshBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A62415B38FD700C456E8 /* FreshBooks.m */; };
+		D626A62615B38FD700C456E8 /* FreshBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A62415B38FD700C456E8 /* FreshBooks.m */; };
+		D626A6AE15B3908F00C456E8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68415B3908F00C456E8 /* Base64Transcoder.c */; };
+		D626A6AF15B3908F00C456E8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68415B3908F00C456E8 /* Base64Transcoder.c */; };
+		D626A6B015B3908F00C456E8 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68615B3908F00C456E8 /* hmac.c */; };
+		D626A6B115B3908F00C456E8 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68615B3908F00C456E8 /* hmac.c */; };
+		D626A6B215B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A68915B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6B315B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A68915B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m */; };
+		D626A6B415B3908F00C456E8 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A68B15B3908F00C456E8 /* OAPlaintextSignatureProvider.m */; };
+		D626A6B515B3908F00C456E8 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A68B15B3908F00C456E8 /* OAPlaintextSignatureProvider.m */; };
+		D626A6B615B3908F00C456E8 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68D15B3908F00C456E8 /* sha1.c */; };
+		D626A6B715B3908F00C456E8 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = D626A68D15B3908F00C456E8 /* sha1.c */; };
+		D626A6B815B3908F00C456E8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69015B3908F00C456E8 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6B915B3908F00C456E8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69015B3908F00C456E8 /* NSString+URLEncoding.m */; };
+		D626A6BA15B3908F00C456E8 /* OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69215B3908F00C456E8 /* OAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6BB15B3908F00C456E8 /* OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69215B3908F00C456E8 /* OAuth.m */; };
+		D626A6BC15B3908F00C456E8 /* OAuthTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69515B3908F00C456E8 /* OAuthTwitter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6BD15B3908F00C456E8 /* OAuthTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69515B3908F00C456E8 /* OAuthTwitter.m */; };
+		D626A6BE15B3908F00C456E8 /* FoursquareLoginPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69D15B3908F00C456E8 /* FoursquareLoginPopup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6BF15B3908F00C456E8 /* FoursquareLoginPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A69D15B3908F00C456E8 /* FoursquareLoginPopup.m */; };
+		D626A6C015B3908F00C456E8 /* signinBullet1.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A69F15B3908F00C456E8 /* signinBullet1.png */; };
+		D626A6C115B3908F00C456E8 /* signinBullet1.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A69F15B3908F00C456E8 /* signinBullet1.png */; };
+		D626A6C215B3908F00C456E8 /* signinBullet1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A015B3908F00C456E8 /* signinBullet1@2x.png */; };
+		D626A6C315B3908F00C456E8 /* signinBullet1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A015B3908F00C456E8 /* signinBullet1@2x.png */; };
+		D626A6C415B3908F00C456E8 /* signinBullet2.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A115B3908F00C456E8 /* signinBullet2.png */; };
+		D626A6C515B3908F00C456E8 /* signinBullet2.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A115B3908F00C456E8 /* signinBullet2.png */; };
+		D626A6C615B3908F00C456E8 /* signinBullet2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A215B3908F00C456E8 /* signinBullet2@2x.png */; };
+		D626A6C715B3908F00C456E8 /* signinBullet2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A215B3908F00C456E8 /* signinBullet2@2x.png */; };
+		D626A6C815B3908F00C456E8 /* signinButtonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A315B3908F00C456E8 /* signinButtonBg.png */; };
+		D626A6C915B3908F00C456E8 /* signinButtonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A315B3908F00C456E8 /* signinButtonBg.png */; };
+		D626A6CA15B3908F00C456E8 /* signinButtonBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A415B3908F00C456E8 /* signinButtonBg@2x.png */; };
+		D626A6CB15B3908F00C456E8 /* signinButtonBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A415B3908F00C456E8 /* signinButtonBg@2x.png */; };
+		D626A6CC15B3908F00C456E8 /* signinHello.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A515B3908F00C456E8 /* signinHello.png */; };
+		D626A6CD15B3908F00C456E8 /* signinHello.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A515B3908F00C456E8 /* signinHello.png */; };
+		D626A6CE15B3908F00C456E8 /* signinHello@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A615B3908F00C456E8 /* signinHello@2x.png */; };
+		D626A6CF15B3908F00C456E8 /* signinHello@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A615B3908F00C456E8 /* signinHello@2x.png */; };
+		D626A6D015B3908F00C456E8 /* signinSeparator.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A715B3908F00C456E8 /* signinSeparator.png */; };
+		D626A6D115B3908F00C456E8 /* signinSeparator.png in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A715B3908F00C456E8 /* signinSeparator.png */; };
+		D626A6D215B3908F00C456E8 /* TwitterLoginCallbackFlow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A815B3908F00C456E8 /* TwitterLoginCallbackFlow.xib */; };
+		D626A6D315B3908F00C456E8 /* TwitterLoginCallbackFlow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D626A6A815B3908F00C456E8 /* TwitterLoginCallbackFlow.xib */; };
+		D626A6D415B3908F00C456E8 /* TwitterLoginPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6AA15B3908F00C456E8 /* TwitterLoginPopup.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6D515B3908F00C456E8 /* TwitterLoginPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6AA15B3908F00C456E8 /* TwitterLoginPopup.m */; };
+		D626A6D615B3908F00C456E8 /* TwitterLoginPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D626A6AB15B3908F00C456E8 /* TwitterLoginPopup.xib */; };
+		D626A6D715B3908F00C456E8 /* TwitterLoginPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D626A6AB15B3908F00C456E8 /* TwitterLoginPopup.xib */; };
+		D626A6D815B3908F00C456E8 /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6AD15B3908F00C456E8 /* TwitterWebViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6D915B3908F00C456E8 /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6AD15B3908F00C456E8 /* TwitterWebViewController.m */; };
+		D626A6DC15B3922900C456E8 /* FreshBooksOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6DB15B3922800C456E8 /* FreshBooksOAuth.m */; };
+		D626A6DD15B3922900C456E8 /* FreshBooksOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6DB15B3922800C456E8 /* FreshBooksOAuth.m */; };
+		D626A6EE15B3EE0200C456E8 /* FreshBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6ED15B3EE0200C456E8 /* FreshBooksViewController.m */; };
+		D626A6EF15B3EE0200C456E8 /* FreshBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6ED15B3EE0200C456E8 /* FreshBooksViewController.m */; };
+		D626A6F715B3F64800C456E8 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6F415B3F64700C456E8 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6F815B3F64800C456E8 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6F415B3F64700C456E8 /* HTMLNode.m */; };
+		D626A6F915B3F64800C456E8 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6F615B3F64800C456E8 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D626A6FA15B3F64800C456E8 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D626A6F615B3F64800C456E8 /* HTMLParser.m */; };
+		D626A6FE15B3F99400C456E8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D626A6FC15B3F8FD00C456E8 /* libxml2.dylib */; };
+		D6580B0115C4D9F100C45650 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6580AFF15C4D9F100C45650 /* TestViewController.m */; };
+		D6580B0515C4DAF200C45650 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6580B0415C4DAF200C45650 /* TestStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D626A61015B38F8900C456E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D626A5E715B38F8900C456E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D626A5EF15B38F8900C456E8;
+			remoteInfo = FreshestBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D626A5F015B38F8900C456E8 /* FreshestBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshestBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D626A5F415B38F8900C456E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D626A5F615B38F8900C456E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D626A5F815B38F8900C456E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D626A5FC15B38F8900C456E8 /* FreshestBooks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreshestBooks-Info.plist"; sourceTree = "<group>"; };
+		D626A5FE15B38F8900C456E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D626A60015B38F8900C456E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D626A60215B38F8900C456E8 /* FreshestBooks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreshestBooks-Prefix.pch"; sourceTree = "<group>"; };
+		D626A60315B38F8900C456E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D626A60415B38F8900C456E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D626A60B15B38F8900C456E8 /* FreshestBooksTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshestBooksTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D626A60C15B38F8900C456E8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D626A61415B38F8900C456E8 /* FreshestBooksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreshestBooksTests-Info.plist"; sourceTree = "<group>"; };
+		D626A61615B38F8900C456E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D626A61815B38F8900C456E8 /* FreshestBooksTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreshestBooksTests.h; sourceTree = "<group>"; };
+		D626A61915B38F8900C456E8 /* FreshestBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshestBooksTests.m; sourceTree = "<group>"; };
+		D626A62315B38FD700C456E8 /* FreshBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooks.h; sourceTree = "<group>"; };
+		D626A62415B38FD700C456E8 /* FreshBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreshBooks.m; sourceTree = "<group>"; };
+		D626A68415B3908F00C456E8 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		D626A68515B3908F00C456E8 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		D626A68615B3908F00C456E8 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		D626A68715B3908F00C456E8 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		D626A68815B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		D626A68915B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		D626A68A15B3908F00C456E8 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		D626A68B15B3908F00C456E8 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		D626A68C15B3908F00C456E8 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		D626A68D15B3908F00C456E8 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		D626A68E15B3908F00C456E8 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		D626A68F15B3908F00C456E8 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		D626A69015B3908F00C456E8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		D626A69115B3908F00C456E8 /* OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth.h; sourceTree = "<group>"; };
+		D626A69215B3908F00C456E8 /* OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth.m; sourceTree = "<group>"; };
+		D626A69315B3908F00C456E8 /* OAuth_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth_Protected.h; sourceTree = "<group>"; };
+		D626A69415B3908F00C456E8 /* OAuthTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthTwitter.h; sourceTree = "<group>"; };
+		D626A69515B3908F00C456E8 /* OAuthTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthTwitter.m; sourceTree = "<group>"; };
+		D626A69615B3908F00C456E8 /* OAuthConsumerCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumerCredentials.h; sourceTree = "<group>"; };
+		D626A69815B3908F00C456E8 /* OAuthLoginPopupDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthLoginPopupDelegate.h; sourceTree = "<group>"; };
+		D626A69915B3908F00C456E8 /* OAuthTwitterCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthTwitterCallbacks.h; sourceTree = "<group>"; };
+		D626A69A15B3908F00C456E8 /* TwitterLoginUiFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginUiFeedback.h; sourceTree = "<group>"; };
+		D626A69C15B3908F00C456E8 /* FoursquareLoginPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareLoginPopup.h; sourceTree = "<group>"; };
+		D626A69D15B3908F00C456E8 /* FoursquareLoginPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareLoginPopup.m; sourceTree = "<group>"; };
+		D626A69F15B3908F00C456E8 /* signinBullet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinBullet1.png; sourceTree = "<group>"; };
+		D626A6A015B3908F00C456E8 /* signinBullet1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signinBullet1@2x.png"; sourceTree = "<group>"; };
+		D626A6A115B3908F00C456E8 /* signinBullet2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinBullet2.png; sourceTree = "<group>"; };
+		D626A6A215B3908F00C456E8 /* signinBullet2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signinBullet2@2x.png"; sourceTree = "<group>"; };
+		D626A6A315B3908F00C456E8 /* signinButtonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinButtonBg.png; sourceTree = "<group>"; };
+		D626A6A415B3908F00C456E8 /* signinButtonBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signinButtonBg@2x.png"; sourceTree = "<group>"; };
+		D626A6A515B3908F00C456E8 /* signinHello.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinHello.png; sourceTree = "<group>"; };
+		D626A6A615B3908F00C456E8 /* signinHello@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signinHello@2x.png"; sourceTree = "<group>"; };
+		D626A6A715B3908F00C456E8 /* signinSeparator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinSeparator.png; sourceTree = "<group>"; };
+		D626A6A815B3908F00C456E8 /* TwitterLoginCallbackFlow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterLoginCallbackFlow.xib; sourceTree = "<group>"; };
+		D626A6A915B3908F00C456E8 /* TwitterLoginPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginPopup.h; sourceTree = "<group>"; };
+		D626A6AA15B3908F00C456E8 /* TwitterLoginPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterLoginPopup.m; sourceTree = "<group>"; };
+		D626A6AB15B3908F00C456E8 /* TwitterLoginPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterLoginPopup.xib; sourceTree = "<group>"; };
+		D626A6AC15B3908F00C456E8 /* TwitterWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWebViewController.h; sourceTree = "<group>"; };
+		D626A6AD15B3908F00C456E8 /* TwitterWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWebViewController.m; sourceTree = "<group>"; };
+		D626A6DA15B3922800C456E8 /* FreshBooksOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksOAuth.h; sourceTree = "<group>"; };
+		D626A6DB15B3922800C456E8 /* FreshBooksOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreshBooksOAuth.m; sourceTree = "<group>"; };
+		D626A6DE15B3931F00C456E8 /* FreshBooksOAuthCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksOAuthCallbacks.h; sourceTree = "<group>"; };
+		D626A6EC15B3EE0200C456E8 /* FreshBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksViewController.h; sourceTree = "<group>"; };
+		D626A6ED15B3EE0200C456E8 /* FreshBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreshBooksViewController.m; sourceTree = "<group>"; };
+		D626A6F015B3EED100C456E8 /* FreshBooksViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksViewControllerDelegate.h; sourceTree = "<group>"; };
+		D626A6F215B3F22600C456E8 /* FreshBooksViewControllerOAuthDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksViewControllerOAuthDelegate.h; sourceTree = "<group>"; };
+		D626A6F315B3F64700C456E8 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		D626A6F415B3F64700C456E8 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		D626A6F515B3F64800C456E8 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		D626A6F615B3F64800C456E8 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		D626A6FC15B3F8FD00C456E8 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D6580AFE15C4D9F100C45650 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		D6580AFF15C4D9F100C45650 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		D6580B0415C4DAF200C45650 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		D6580B0615C4EFFD00C45650 /* FreshBooksDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshBooksDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D626A5ED15B38F8900C456E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A6FE15B3F99400C456E8 /* libxml2.dylib in Frameworks */,
+				D626A5F515B38F8900C456E8 /* UIKit.framework in Frameworks */,
+				D626A5F715B38F8900C456E8 /* Foundation.framework in Frameworks */,
+				D626A5F915B38F8900C456E8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D626A60715B38F8900C456E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A60D15B38F8900C456E8 /* SenTestingKit.framework in Frameworks */,
+				D626A60E15B38F8900C456E8 /* UIKit.framework in Frameworks */,
+				D626A60F15B38F8900C456E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D626A5E515B38F8900C456E8 = {
+			isa = PBXGroup;
+			children = (
+				D626A6FC15B3F8FD00C456E8 /* libxml2.dylib */,
+				D626A5FA15B38F8900C456E8 /* FreshestBooks */,
+				D626A61215B38F8900C456E8 /* FreshestBooksTests */,
+				D626A5F315B38F8900C456E8 /* Frameworks */,
+				D626A5F115B38F8900C456E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D626A5F115B38F8900C456E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D626A5F015B38F8900C456E8 /* FreshestBooks.app */,
+				D626A60B15B38F8900C456E8 /* FreshestBooksTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D626A5F315B38F8900C456E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D626A5F415B38F8900C456E8 /* UIKit.framework */,
+				D626A5F615B38F8900C456E8 /* Foundation.framework */,
+				D626A5F815B38F8900C456E8 /* CoreGraphics.framework */,
+				D626A60C15B38F8900C456E8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D626A5FA15B38F8900C456E8 /* FreshestBooks */ = {
+			isa = PBXGroup;
+			children = (
+				D626A60315B38F8900C456E8 /* AppDelegate.h */,
+				D626A60415B38F8900C456E8 /* AppDelegate.m */,
+				D6580B0415C4DAF200C45650 /* TestStoryboard.storyboard */,
+				D6580AFE15C4D9F100C45650 /* TestViewController.h */,
+				D6580AFF15C4D9F100C45650 /* TestViewController.m */,
+				D626A62315B38FD700C456E8 /* FreshBooks.h */,
+				D626A62415B38FD700C456E8 /* FreshBooks.m */,
+				D6580B0615C4EFFD00C45650 /* FreshBooksDelegate.h */,
+				D626A6EC15B3EE0200C456E8 /* FreshBooksViewController.h */,
+				D626A6ED15B3EE0200C456E8 /* FreshBooksViewController.m */,
+				D626A6F015B3EED100C456E8 /* FreshBooksViewControllerDelegate.h */,
+				D626A6F215B3F22600C456E8 /* FreshBooksViewControllerOAuthDelegate.h */,
+				D626A6DA15B3922800C456E8 /* FreshBooksOAuth.h */,
+				D626A6DB15B3922800C456E8 /* FreshBooksOAuth.m */,
+				D626A6DE15B3931F00C456E8 /* FreshBooksOAuthCallbacks.h */,
+				D626A6FB15B3F64F00C456E8 /* HTMLParser (Ben Reeves) */,
+				D626A68115B3908F00C456E8 /* OAuth (Jaanus Kase) */,
+				D626A5FB15B38F8900C456E8 /* Supporting Files */,
+			);
+			path = FreshestBooks;
+			sourceTree = "<group>";
+		};
+		D626A5FB15B38F8900C456E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D626A5FC15B38F8900C456E8 /* FreshestBooks-Info.plist */,
+				D626A5FD15B38F8900C456E8 /* InfoPlist.strings */,
+				D626A60015B38F8900C456E8 /* main.m */,
+				D626A60215B38F8900C456E8 /* FreshestBooks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D626A61215B38F8900C456E8 /* FreshestBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				D626A61815B38F8900C456E8 /* FreshestBooksTests.h */,
+				D626A61915B38F8900C456E8 /* FreshestBooksTests.m */,
+				D626A61315B38F8900C456E8 /* Supporting Files */,
+			);
+			path = FreshestBooksTests;
+			sourceTree = "<group>";
+		};
+		D626A61315B38F8900C456E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D626A61415B38F8900C456E8 /* FreshestBooksTests-Info.plist */,
+				D626A61515B38F8900C456E8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D626A68115B3908F00C456E8 /* OAuth (Jaanus Kase) */ = {
+			isa = PBXGroup;
+			children = (
+				D626A68215B3908F00C456E8 /* Guts */,
+				D626A69615B3908F00C456E8 /* OAuthConsumerCredentials.h */,
+				D626A69715B3908F00C456E8 /* Protocols */,
+				D626A69B15B3908F00C456E8 /* User Interface */,
+			);
+			name = "OAuth (Jaanus Kase)";
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		D626A68215B3908F00C456E8 /* Guts */ = {
+			isa = PBXGroup;
+			children = (
+				D626A68315B3908F00C456E8 /* Crypto */,
+				D626A68F15B3908F00C456E8 /* NSString+URLEncoding.h */,
+				D626A69015B3908F00C456E8 /* NSString+URLEncoding.m */,
+				D626A69115B3908F00C456E8 /* OAuth.h */,
+				D626A69215B3908F00C456E8 /* OAuth.m */,
+				D626A69315B3908F00C456E8 /* OAuth_Protected.h */,
+				D626A69415B3908F00C456E8 /* OAuthTwitter.h */,
+				D626A69515B3908F00C456E8 /* OAuthTwitter.m */,
+			);
+			path = Guts;
+			sourceTree = "<group>";
+		};
+		D626A68315B3908F00C456E8 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				D626A68415B3908F00C456E8 /* Base64Transcoder.c */,
+				D626A68515B3908F00C456E8 /* Base64Transcoder.h */,
+				D626A68615B3908F00C456E8 /* hmac.c */,
+				D626A68715B3908F00C456E8 /* hmac.h */,
+				D626A68815B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.h */,
+				D626A68915B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m */,
+				D626A68A15B3908F00C456E8 /* OAPlaintextSignatureProvider.h */,
+				D626A68B15B3908F00C456E8 /* OAPlaintextSignatureProvider.m */,
+				D626A68C15B3908F00C456E8 /* OASignatureProviding.h */,
+				D626A68D15B3908F00C456E8 /* sha1.c */,
+				D626A68E15B3908F00C456E8 /* sha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		D626A69715B3908F00C456E8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D626A69815B3908F00C456E8 /* OAuthLoginPopupDelegate.h */,
+				D626A69915B3908F00C456E8 /* OAuthTwitterCallbacks.h */,
+				D626A69A15B3908F00C456E8 /* TwitterLoginUiFeedback.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D626A69B15B3908F00C456E8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D626A69C15B3908F00C456E8 /* FoursquareLoginPopup.h */,
+				D626A69D15B3908F00C456E8 /* FoursquareLoginPopup.m */,
+				D626A69E15B3908F00C456E8 /* Resources */,
+				D626A6A815B3908F00C456E8 /* TwitterLoginCallbackFlow.xib */,
+				D626A6A915B3908F00C456E8 /* TwitterLoginPopup.h */,
+				D626A6AA15B3908F00C456E8 /* TwitterLoginPopup.m */,
+				D626A6AB15B3908F00C456E8 /* TwitterLoginPopup.xib */,
+				D626A6AC15B3908F00C456E8 /* TwitterWebViewController.h */,
+				D626A6AD15B3908F00C456E8 /* TwitterWebViewController.m */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		D626A69E15B3908F00C456E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D626A69F15B3908F00C456E8 /* signinBullet1.png */,
+				D626A6A015B3908F00C456E8 /* signinBullet1@2x.png */,
+				D626A6A115B3908F00C456E8 /* signinBullet2.png */,
+				D626A6A215B3908F00C456E8 /* signinBullet2@2x.png */,
+				D626A6A315B3908F00C456E8 /* signinButtonBg.png */,
+				D626A6A415B3908F00C456E8 /* signinButtonBg@2x.png */,
+				D626A6A515B3908F00C456E8 /* signinHello.png */,
+				D626A6A615B3908F00C456E8 /* signinHello@2x.png */,
+				D626A6A715B3908F00C456E8 /* signinSeparator.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D626A6FB15B3F64F00C456E8 /* HTMLParser (Ben Reeves) */ = {
+			isa = PBXGroup;
+			children = (
+				D626A6F315B3F64700C456E8 /* HTMLNode.h */,
+				D626A6F415B3F64700C456E8 /* HTMLNode.m */,
+				D626A6F515B3F64800C456E8 /* HTMLParser.h */,
+				D626A6F615B3F64800C456E8 /* HTMLParser.m */,
+			);
+			name = "HTMLParser (Ben Reeves)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D626A5EF15B38F8900C456E8 /* FreshestBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D626A61D15B38F8900C456E8 /* Build configuration list for PBXNativeTarget "FreshestBooks" */;
+			buildPhases = (
+				D626A5EC15B38F8900C456E8 /* Sources */,
+				D626A5ED15B38F8900C456E8 /* Frameworks */,
+				D626A5EE15B38F8900C456E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshestBooks;
+			productName = FreshestBooks;
+			productReference = D626A5F015B38F8900C456E8 /* FreshestBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D626A60A15B38F8900C456E8 /* FreshestBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D626A62015B38F8900C456E8 /* Build configuration list for PBXNativeTarget "FreshestBooksTests" */;
+			buildPhases = (
+				D626A60615B38F8900C456E8 /* Sources */,
+				D626A60715B38F8900C456E8 /* Frameworks */,
+				D626A60815B38F8900C456E8 /* Resources */,
+				D626A60915B38F8900C456E8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D626A61115B38F8900C456E8 /* PBXTargetDependency */,
+			);
+			name = FreshestBooksTests;
+			productName = FreshestBooksTests;
+			productReference = D626A60B15B38F8900C456E8 /* FreshestBooksTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D626A5E715B38F8900C456E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = GoldenGloves;
+			};
+			buildConfigurationList = D626A5EA15B38F8900C456E8 /* Build configuration list for PBXProject "FreshestBooks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D626A5E515B38F8900C456E8;
+			productRefGroup = D626A5F115B38F8900C456E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D626A5EF15B38F8900C456E8 /* FreshestBooks */,
+				D626A60A15B38F8900C456E8 /* FreshestBooksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D626A5EE15B38F8900C456E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A5FF15B38F8900C456E8 /* InfoPlist.strings in Resources */,
+				D626A6C015B3908F00C456E8 /* signinBullet1.png in Resources */,
+				D626A6C215B3908F00C456E8 /* signinBullet1@2x.png in Resources */,
+				D626A6C415B3908F00C456E8 /* signinBullet2.png in Resources */,
+				D626A6C615B3908F00C456E8 /* signinBullet2@2x.png in Resources */,
+				D626A6C815B3908F00C456E8 /* signinButtonBg.png in Resources */,
+				D626A6CA15B3908F00C456E8 /* signinButtonBg@2x.png in Resources */,
+				D626A6CC15B3908F00C456E8 /* signinHello.png in Resources */,
+				D626A6CE15B3908F00C456E8 /* signinHello@2x.png in Resources */,
+				D626A6D015B3908F00C456E8 /* signinSeparator.png in Resources */,
+				D626A6D215B3908F00C456E8 /* TwitterLoginCallbackFlow.xib in Resources */,
+				D626A6D615B3908F00C456E8 /* TwitterLoginPopup.xib in Resources */,
+				D6580B0515C4DAF200C45650 /* TestStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D626A60815B38F8900C456E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A61715B38F8900C456E8 /* InfoPlist.strings in Resources */,
+				D626A6C115B3908F00C456E8 /* signinBullet1.png in Resources */,
+				D626A6C315B3908F00C456E8 /* signinBullet1@2x.png in Resources */,
+				D626A6C515B3908F00C456E8 /* signinBullet2.png in Resources */,
+				D626A6C715B3908F00C456E8 /* signinBullet2@2x.png in Resources */,
+				D626A6C915B3908F00C456E8 /* signinButtonBg.png in Resources */,
+				D626A6CB15B3908F00C456E8 /* signinButtonBg@2x.png in Resources */,
+				D626A6CD15B3908F00C456E8 /* signinHello.png in Resources */,
+				D626A6CF15B3908F00C456E8 /* signinHello@2x.png in Resources */,
+				D626A6D115B3908F00C456E8 /* signinSeparator.png in Resources */,
+				D626A6D315B3908F00C456E8 /* TwitterLoginCallbackFlow.xib in Resources */,
+				D626A6D715B3908F00C456E8 /* TwitterLoginPopup.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D626A60915B38F8900C456E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D626A5EC15B38F8900C456E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A60115B38F8900C456E8 /* main.m in Sources */,
+				D626A60515B38F8900C456E8 /* AppDelegate.m in Sources */,
+				D626A62515B38FD700C456E8 /* FreshBooks.m in Sources */,
+				D626A6AE15B3908F00C456E8 /* Base64Transcoder.c in Sources */,
+				D626A6B015B3908F00C456E8 /* hmac.c in Sources */,
+				D626A6B215B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				D626A6B415B3908F00C456E8 /* OAPlaintextSignatureProvider.m in Sources */,
+				D626A6B615B3908F00C456E8 /* sha1.c in Sources */,
+				D626A6B815B3908F00C456E8 /* NSString+URLEncoding.m in Sources */,
+				D626A6BA15B3908F00C456E8 /* OAuth.m in Sources */,
+				D626A6BC15B3908F00C456E8 /* OAuthTwitter.m in Sources */,
+				D626A6BE15B3908F00C456E8 /* FoursquareLoginPopup.m in Sources */,
+				D626A6D415B3908F00C456E8 /* TwitterLoginPopup.m in Sources */,
+				D626A6D815B3908F00C456E8 /* TwitterWebViewController.m in Sources */,
+				D626A6DC15B3922900C456E8 /* FreshBooksOAuth.m in Sources */,
+				D626A6EE15B3EE0200C456E8 /* FreshBooksViewController.m in Sources */,
+				D626A6F715B3F64800C456E8 /* HTMLNode.m in Sources */,
+				D626A6F915B3F64800C456E8 /* HTMLParser.m in Sources */,
+				D6580B0115C4D9F100C45650 /* TestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D626A60615B38F8900C456E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D626A61A15B38F8900C456E8 /* FreshestBooksTests.m in Sources */,
+				D626A62615B38FD700C456E8 /* FreshBooks.m in Sources */,
+				D626A6AF15B3908F00C456E8 /* Base64Transcoder.c in Sources */,
+				D626A6B115B3908F00C456E8 /* hmac.c in Sources */,
+				D626A6B315B3908F00C456E8 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				D626A6B515B3908F00C456E8 /* OAPlaintextSignatureProvider.m in Sources */,
+				D626A6B715B3908F00C456E8 /* sha1.c in Sources */,
+				D626A6B915B3908F00C456E8 /* NSString+URLEncoding.m in Sources */,
+				D626A6BB15B3908F00C456E8 /* OAuth.m in Sources */,
+				D626A6BD15B3908F00C456E8 /* OAuthTwitter.m in Sources */,
+				D626A6BF15B3908F00C456E8 /* FoursquareLoginPopup.m in Sources */,
+				D626A6D515B3908F00C456E8 /* TwitterLoginPopup.m in Sources */,
+				D626A6D915B3908F00C456E8 /* TwitterWebViewController.m in Sources */,
+				D626A6DD15B3922900C456E8 /* FreshBooksOAuth.m in Sources */,
+				D626A6EF15B3EE0200C456E8 /* FreshBooksViewController.m in Sources */,
+				D626A6F815B3F64800C456E8 /* HTMLNode.m in Sources */,
+				D626A6FA15B3F64800C456E8 /* HTMLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D626A61115B38F8900C456E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D626A5EF15B38F8900C456E8 /* FreshestBooks */;
+			targetProxy = D626A61015B38F8900C456E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D626A5FD15B38F8900C456E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D626A5FE15B38F8900C456E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D626A61515B38F8900C456E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D626A61615B38F8900C456E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D626A61B15B38F8900C456E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D626A61C15B38F8900C456E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D626A61E15B38F8900C456E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreshestBooks/FreshestBooks-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "FreshestBooks/FreshestBooks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D626A61F15B38F8900C456E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreshestBooks/FreshestBooks-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "FreshestBooks/FreshestBooks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D626A62115B38F8900C456E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreshestBooks.app/FreshestBooks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreshestBooks/FreshestBooks-Prefix.pch";
+				INFOPLIST_FILE = "FreshestBooksTests/FreshestBooksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D626A62215B38F8900C456E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreshestBooks.app/FreshestBooks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreshestBooks/FreshestBooks-Prefix.pch";
+				INFOPLIST_FILE = "FreshestBooksTests/FreshestBooksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D626A5EA15B38F8900C456E8 /* Build configuration list for PBXProject "FreshestBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D626A61B15B38F8900C456E8 /* Debug */,
+				D626A61C15B38F8900C456E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D626A61D15B38F8900C456E8 /* Build configuration list for PBXNativeTarget "FreshestBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D626A61E15B38F8900C456E8 /* Debug */,
+				D626A61F15B38F8900C456E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D626A62015B38F8900C456E8 /* Build configuration list for PBXNativeTarget "FreshestBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D626A62115B38F8900C456E8 /* Debug */,
+				D626A62215B38F8900C456E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D626A5E715B38F8900C456E8 /* Project object */;
+}
